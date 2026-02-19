@@ -33,3 +33,10 @@ btnSave.onclick = () => {
     anchor.click();
     document.body.removeChild(anchor);
 };
+
+// Auto save localStorage
+editor.value = localStorage.getItem("content") || "";
+
+editor.addEventListener("input", () => {
+  localStorage.setItem("content", editor.value);
+});
