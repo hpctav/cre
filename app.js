@@ -21,7 +21,7 @@ btnOpen.onclick = () => {
 // Xử lý Lưu File
 btnSave.onclick = () => {
     const text = editor.value;
-    const blob = new Blob([text], { type: 'text/plain' });
+    const blob = new Blob([text], {type: 'text/plain' });
     const anchor = document.createElement('a');
     
     anchor.download = "note_" + Date.now() + ".txt";
@@ -37,6 +37,6 @@ btnSave.onclick = () => {
 // Auto save localStorage
 editor.value = localStorage.getItem("content") || "";
 
-editor.addEventListener("input", () => {
+editor.addEventListener("input", sẽ() => {
   localStorage.setItem("content", editor.value);
 });
