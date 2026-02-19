@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#1e1e1e">
-    <title>Minimal Editor</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css">
-    <!-- Load Font Roboto Mono từ Google Fonts -->
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1e1e1e">
+
+<title>Minimal Editor</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-    <textarea id="editor" placeholder="Bắt đầu nhập liệu..." spellcheck="false"></textarea>
+<textarea id="editor" placeholder="Bắt đầu nhập liệu..." spellcheck="false"></textarea>
 
-    <nav class="toolbar">
-        <button id="btnOpen">MỞ FILE</button>
-        <button id="btnSave">LƯU FILE</button>
-    </nav>
+<nav class="toolbar">
+    <button id="btnOpen">MỞ FILE</button>
+    <button id="btnSave">LƯU FILE</button>
+</nav>
 
-    <script src="sw-reg.js"></script>
-    <script src="app.js"></script>
+<script src="sw-reg.js"></script>
+<script src="app.js"></script>
+
 </body>
 </html>
